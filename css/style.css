@@ -783,3 +783,164 @@ h5, h6, .fw-medium {
                 url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
+
+/*** Google Stitch — Telemetry Cockpit ***/
+.telemetry-cockpit {
+    background: radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.15) 0%, transparent 70%), #070b14;
+    border: 1px solid rgba(14, 165, 233, 0.25);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.telemetry-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.telemetry-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace, sans-serif;
+    font-size: 13px;
+    color: #38bdf8;
+    background: rgba(14, 165, 233, 0.1);
+    padding: 6px 14px;
+    border-radius: 9999px;
+    border: 1px solid rgba(14, 165, 233, 0.3);
+}
+
+.telemetry-live-dot {
+    width: 8px;
+    height: 8px;
+    background: #38bdf8;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #38bdf8;
+    animation: telemetryPulse 1.5s infinite;
+}
+
+@keyframes telemetryPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.telemetry-stat-card {
+    background: rgba(15, 23, 42, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.telemetry-stat-card:hover {
+    border-color: rgba(14, 165, 233, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.15);
+}
+
+.telemetry-value {
+    font-family: 'JetBrains Mono', monospace, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.telemetry-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+}
+
+/*** Google Stitch — Tech Stack Grid ***/
+.tech-stack-card {
+    background: #0b1120;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 28px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.tech-stack-card:hover {
+    border-color: rgba(245, 158, 11, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.tech-tag-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #cbd5e1;
+    margin: 4px;
+    transition: all 0.2s ease;
+}
+
+.tech-tag-badge:hover {
+    background: rgba(14, 165, 233, 0.15);
+    border-color: #38bdf8;
+    color: #ffffff;
+}
+
+.tech-tag-badge.gold {
+    background: rgba(245, 158, 11, 0.12);
+    border-color: rgba(245, 158, 11, 0.3);
+    color: #fbbf24;
+}
+
+/*** Google Stitch — Flagship Case Studies ***/
+.case-card {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.9) 0%, rgba(7, 11, 20, 0.95) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.35s ease;
+}
+
+.case-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #f59e0b, #0ea5e9);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(14, 165, 233, 0.35);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.case-card:hover::before {
+    opacity: 1;
+}
+
+.case-impact-metric {
+    font-family: 'JetBrains Mono', monospace, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fbbf24;
+}

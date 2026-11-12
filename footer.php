@@ -60,21 +60,21 @@
                 </div>
                 <div class="col-lg-8 col-md-6">
                     <div class="row gx-5">
-                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="col-lg-7 col-md-12 pt-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">Get In Touch</h3>
                             </div>
                             <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <i class="bi bi-geo-alt text-primary me-2 flex-shrink-0 mt-1"></i>
                                 <p class="mb-0">"om", sorathiya park, street no. 2,Nr. swaminarayan temple Mavdi, Rajkot</p>
                             </div>
                             <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0"><a href="mailto:goldensparrowsoftech@gmail.com" class="linkcolor">goldensparrowsoftech@gmail.com</a></p>
+                                <i class="bi bi-envelope-open text-primary me-2 flex-shrink-0 mt-1"></i>
+                                <p class="mb-0 text-break" style="word-break: break-all;"><a href="mailto:goldensparrowsoftech@gmail.com" class="linkcolor">goldensparrowsoftech@gmail.com</a></p>
                             </div>
                             <div class="d-flex mb-2">
-                                <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0"><a href="tel:+917990590007" class="linkcolor"><a href="tel:+917990590007">+917990590007</a></a></p>
+                                <i class="bi bi-telephone text-primary me-2 flex-shrink-0 mt-1"></i>
+                                <p class="mb-0"><a href="tel:+917990590007" class="linkcolor">+91 79905 90007</a></p>
                             </div>
                             <div class="d-flex mt-4">
                                 <a class="btn btn-primary btn-square me-2" href="https://twitter.com/golden_sparrow9" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
@@ -97,7 +97,7 @@
                                 <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                             </div>
                         </div> -->
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="col-lg-5 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">Popular Links</h3>
                             </div>

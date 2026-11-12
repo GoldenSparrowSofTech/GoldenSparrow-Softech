@@ -39,23 +39,23 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+            <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block border-bottom border-secondary border-opacity-10">
+        <div class="row gx-0 align-items-center" style="min-height: 44px;">
+            <div class="col-lg-9 text-center text-lg-start py-2">
+                <div class="d-inline-flex align-items-center flex-wrap gap-4">
+                    <span class="topbar-info-item"><i class="fa fa-map-marker-alt"></i>Mavdi, Rajkot, Gujarat</span>
+                    <span class="topbar-info-item"><i class="fa fa-phone-alt"></i><a href="tel:+917990590007" class="linkcolor text-nowrap">+91 79905 90007</a></span>
+                    <span class="topbar-info-item"><i class="fa fa-envelope-open"></i><a href="mailto:goldensparrowsoftech@gmail.com" class="linkcolor text-nowrap">goldensparrowsoftech@gmail.com</a></span>
                 </div>
             </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+            <div class="col-lg-3 text-center text-lg-end py-2">
+                <div class="d-inline-flex align-items-center gap-2">
+                    <a class="topbar-social-btn" href="https://twitter.com/golden_sparrow9" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="topbar-social-btn" href="https://www.facebook.com/profile.php?id=100092878565032" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="topbar-social-btn" href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="topbar-social-btn" href="https://www.instagram.com/goldensparrowsoftech/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a class="topbar-social-btn" href="https://api.whatsapp.com/send?phone=917990590007&text=Hello,%20I%27m%20interested%20in%20your%20services." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+                <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0 navbar-brand-wrapper">
                 <img src="img/logo.png" alt="Golden Sparrow SofTech Logo" class="navbar-brand-logo">
                 <div class="navbar-brand-text">
@@ -82,26 +82,16 @@
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                         <div class="dropdown-menu m-0">
                             <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                            <a href="feature.html" class="dropdown-item">Our features</a>
-                            <a href="team.html" class="dropdown-item">Team Members</a>
-                            <a href="testimonial.html" class="dropdown-item active">Testimonial</a>
+                            <a href="feature.html" class="dropdown-item">Our Features</a>
                             <a href="quote.html" class="dropdown-item">Free Quote</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a>
+                <a href="quote.html" class="btn btn-primary py-2 px-4 ms-3 d-none d-lg-block"><i class="fa fa-rocket me-2"></i>Get A Quote</a>
             </div>
         </nav>
 
@@ -245,21 +235,21 @@
                 </div>
                 <div class="col-lg-8 col-md-6">
                     <div class="row gx-5">
-                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="col-lg-7 col-md-12 pt-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">Get In Touch</h3>
                             </div>
                             <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <i class="bi bi-geo-alt text-primary me-2 flex-shrink-0 mt-1"></i>
                                 <p class="mb-0">123 Street, New York, USA</p>
                             </div>
                             <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <i class="bi bi-envelope-open text-primary me-2 flex-shrink-0 mt-1"></i>
+                                <p class="mb-0">goldensparrowsoftech@gmail.com</p>
                             </div>
                             <div class="d-flex mb-2">
-                                <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+012 345 67890</p>
+                                <i class="bi bi-telephone text-primary me-2 flex-shrink-0 mt-1"></i>
+                                <p class="mb-0">+91 79905 90007</p>
                             </div>
                             <div class="d-flex mt-4">
                                 <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
@@ -281,7 +271,7 @@
                                 <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="col-lg-5 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">Popular Links</h3>
                             </div>

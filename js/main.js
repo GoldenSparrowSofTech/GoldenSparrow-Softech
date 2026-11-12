@@ -122,5 +122,47 @@
         }
     });
     
+
+    // WhatsApp Form Integration
+    const WHATSAPP_PHONE = '917990590007';
+
+    // Quote Form to WhatsApp
+    $(document).on('submit', '#quoteForm, .quote-form', function (e) {
+        e.preventDefault();
+        const form = $(this);
+        const name = form.find('input[placeholder*="Name"]').val() || '';
+        const email = form.find('input[placeholder*="Email"]').val() || '';
+        const service = form.find('select option:selected').text() || 'Custom Software Solutions';
+        const message = form.find('textarea').val() || '';
+
+        const text = "*New Quote Request - Golden Sparrow SofTech*\n\n" +
+                     "*Name:* " + name + "\n" +
+                     "*Email:* " + email + "\n" +
+                     "*Service:* " + service + "\n" +
+                     "*Message:* " + message;
+
+        const waUrl = "https://api.whatsapp.com/send?phone=" + WHATSAPP_PHONE + "&text=" + encodeURIComponent(text);
+        window.open(waUrl, '_blank');
+    });
+
+    // Contact Form to WhatsApp
+    $(document).on('submit', '#contactForm, .contact-form', function (e) {
+        e.preventDefault();
+        const form = $(this);
+        const name = form.find('input[placeholder*="Name"]').val() || '';
+        const email = form.find('input[placeholder*="Email"]').val() || '';
+        const subject = form.find('input[placeholder*="Subject"]').val() || 'General Inquiry';
+        const message = form.find('textarea').val() || '';
+
+        const text = "*New Contact Message - Golden Sparrow SofTech*\n\n" +
+                     "*Name:* " + name + "\n" +
+                     "*Email:* " + email + "\n" +
+                     "*Subject:* " + subject + "\n" +
+                     "*Message:* " + message;
+
+        const waUrl = "https://api.whatsapp.com/send?phone=" + WHATSAPP_PHONE + "&text=" + encodeURIComponent(text);
+        window.open(waUrl, '_blank');
+    });
+
 })(jQuery);
 

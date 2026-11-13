@@ -122,5 +122,83 @@
         }
     });
     
+
+    // WhatsApp Form Integration
+    const WHATSAPP_PHONE = '917990590007';
+
+    // Quote Form to WhatsApp
+    $(document).on('submit', '#quoteForm, .quote-form', function (e) {
+        e.preventDefault();
+        const form = $(this);
+        const name = form.find('input[placeholder*="Name"]').val() || '';
+        const email = form.find('input[placeholder*="Email"]').val() || '';
+        const service = form.find('select option:selected').text() || 'Custom Software Solutions';
+        const message = form.find('textarea').val() || '';
+
+        const text = "*New Quote Request - Golden Sparrow SofTech*\n\n" +
+                     "*Name:* " + name + "\n" +
+                     "*Email:* " + email + "\n" +
+                     "*Service:* " + service + "\n" +
+                     "*Message:* " + message;
+
+        const waUrl = "https://api.whatsapp.com/send?phone=" + WHATSAPP_PHONE + "&text=" + encodeURIComponent(text);
+        window.open(waUrl, '_blank');
+    });
+
+    // Contact Form to WhatsApp
+    $(document).on('submit', '#contactForm, .contact-form', function (e) {
+        e.preventDefault();
+        const form = $(this);
+        const name = form.find('input[placeholder*="Name"]').val() || '';
+        const email = form.find('input[placeholder*="Email"]').val() || '';
+        const subject = form.find('input[placeholder*="Subject"]').val() || 'General Inquiry';
+        const message = form.find('textarea').val() || '';
+
+        const text = "*New Contact Message - Golden Sparrow SofTech*\n\n" +
+                     "*Name:* " + name + "\n" +
+                     "*Email:* " + email + "\n" +
+                     "*Subject:* " + subject + "\n" +
+                     "*Message:* " + message;
+
+        const waUrl = "https://api.whatsapp.com/send?phone=" + WHATSAPP_PHONE + "&text=" + encodeURIComponent(text);
+        window.open(waUrl, '_blank');
+    });
+
+
+    // Language Switcher Logic (English, Hindi, Gujarati)
+    window.setLanguage = function (lang) {
+        localStorage.setItem('userLanguage', lang);
+        
+        // Update googtrans cookie
+        document.cookie = "googtrans=/en/" + lang + "; path=/;";
+        document.cookie = "googtrans=/en/" + lang + "; path=/; domain=" + window.location.hostname + ";";
+        document.cookie = "googtrans=/en/" + lang + "; path=/; domain=." + window.location.hostname + ";";
+
+        const combo = document.querySelector('.goog-te-combo');
+        if (combo) {
+            combo.value = lang;
+            combo.dispatchEvent(new Event('change'));
+        } else {
+            location.reload();
+        }
+        updateLangLabel(lang);
+    };
+
+    function updateLangLabel(lang) {
+        const labels = {
+            'en': 'English',
+            'hi': 'हिन्दी',
+            'gu': 'ગુજરાતી'
+        };
+        const textEl = document.getElementById('selectedLangText');
+        if (textEl && labels[lang]) {
+            textEl.textContent = labels[lang];
+        }
+    }
+
+    // Initialize saved language label on page load
+    const savedLang = localStorage.getItem('userLanguage') || 'en';
+    updateLangLabel(savedLang);
+
 })(jQuery);
 

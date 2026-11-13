@@ -94,6 +94,17 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
+                <div class="dropdown ms-lg-3 my-2 my-lg-0">
+                    <button class="btn btn-sm lang-dropdown-btn dropdown-toggle d-inline-flex align-items-center" type="button" id="langSelect" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-globe text-primary me-2"></i>
+                        <span id="selectedLangText">English</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow" aria-labelledby="langSelect">
+                        <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('hi')">हिन्दी (Hindi)</a></li>
+                        <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('gu')">ગુજરાતી (Gujarati)</a></li>
+                    </ul>
+                </div>
                 <a href="quote.html" class="btn btn-primary py-2 px-4 ms-3 d-none d-lg-block"><i class="fa fa-rocket me-2"></i>Get A Quote</a>
             </div>
         </nav>
@@ -358,6 +369,18 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Google Translate Element & Init -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,gu',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

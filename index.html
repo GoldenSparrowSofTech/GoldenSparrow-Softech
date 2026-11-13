@@ -94,6 +94,17 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
+                <div class="dropdown ms-lg-3 my-2 my-lg-0">
+                    <button class="btn btn-sm lang-dropdown-btn dropdown-toggle d-inline-flex align-items-center" type="button" id="langSelect" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-globe text-primary me-2"></i>
+                        <span id="selectedLangText">English</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow" aria-labelledby="langSelect">
+                        <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('hi')">हिन्दी (Hindi)</a></li>
+                        <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('gu')">ગુજરાતી (Gujarati)</a></li>
+                    </ul>
+                </div>
                 <a href="quote.html" class="btn btn-primary py-2 px-4 ms-3 d-none d-lg-block"><i class="fa fa-rocket me-2"></i>Get A Quote</a>
             </div>
         </nav>
@@ -231,58 +242,6 @@
         </div>
     </div>
     <!-- Facts End -->
-
-    <!-- Telemetry Cockpit Start -->
-    <div class="container-fluid py-4 wow fadeInUp" data-wow-delay="0.2s">
-        <div class="container">
-            <div class="telemetry-cockpit">
-                <div class="telemetry-header">
-                    <div class="d-flex align-items-center gap-3 flex-wrap">
-                        <div class="telemetry-live">
-                            <span class="telemetry-live-dot"></span>
-                            gs-node-cluster-blr.sovereign.mesh : ACTIVE
-                        </div>
-                        <span class="badge bg-dark border border-secondary text-uppercase py-2 px-3"
-                            style="font-size: 11px; letter-spacing: 1px;"><i
-                                class="fa fa-shield-alt text-primary me-2"></i>Zero-Trust Enclave</span>
-                    </div>
-                    <div class="text-white-50" style="font-size: 13px;">
-                        <i class="fa fa-satellite text-warning me-2"></i>Live Telemetry Stream • Tier 4 Sovereign Cloud
-                        Mesh
-                    </div>
-                </div>
-                <div class="row g-3">
-                    <div class="col-6 col-lg-3">
-                        <div class="telemetry-stat-card">
-                            <div class="telemetry-value text-gradient-cyan">11.8 <span
-                                    class="fs-6 text-white-50">ms</span></div>
-                            <div class="telemetry-label">Global P99 Latency</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="telemetry-stat-card">
-                            <div class="telemetry-value text-gradient-gold">99.999%</div>
-                            <div class="telemetry-label">Core SLA Uptime</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="telemetry-stat-card">
-                            <div class="telemetry-value text-white">1.84 <span class="fs-6 text-white-50">B/Day</span>
-                            </div>
-                            <div class="telemetry-label">Transactions Handled</div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="telemetry-stat-card">
-                            <div class="telemetry-value text-gradient-cyan">0.00</div>
-                            <div class="telemetry-label">Anomalies Detected (SOC 2)</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Telemetry Cockpit End -->
 
 
     <!-- About Start -->
@@ -502,164 +461,6 @@
     <!-- Service End -->
 
 
-    <!-- Flagship Case Studies Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s"
-        style="background: linear-gradient(180deg, #070b14 0%, #0b1120 100%);">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
-                <h5 class="fw-bold text-gradient-cyan text-uppercase" style="letter-spacing: 2px;">Proven Mission Impact
-                </h5>
-                <h1 class="mb-0 text-white">Flagship Enterprise Architectures</h1>
-                <p class="text-white-50 mt-3">High-reliability platforms engineered for mission-critical scale,
-                    telemetry, and distributed transactions.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.2s">
-                    <div class="case-card">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <span
-                                class="badge bg-primary bg-opacity-25 text-info border border-info border-opacity-25 py-2 px-3"
-                                style="font-size: 11px;">AEROSPACE &amp; TELEMETRY</span>
-                            <span class="text-white-50 small"><i class="fa fa-satellite me-1"></i>P99 Mesh</span>
-                        </div>
-                        <h4 class="text-white mb-3">AeroShield Multi-Region Telemetry Mesh</h4>
-                        <p class="text-white-50 mb-4" style="font-size: 14px; line-height: 1.6;">
-                            Autonomous failover control mesh connecting low-earth orbit satellite ground stations with
-                            guaranteed sub-12ms event relay.
-                        </p>
-                        <div
-                            class="border-top border-secondary border-opacity-25 pt-3 d-flex align-items-center justify-content-between">
-                            <span class="text-muted small text-uppercase">Throughput Gain</span>
-                            <span class="case-impact-metric">+340% Real-Time</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.4s">
-                    <div class="case-card">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <span
-                                class="badge bg-warning bg-opacity-25 text-warning border border-warning border-opacity-25 py-2 px-3"
-                                style="font-size: 11px;">FINTECH &amp; PAYMENTS</span>
-                            <span class="text-white-50 small"><i class="fa fa-bolt me-1"></i>48k TPS</span>
-                        </div>
-                        <h4 class="text-white mb-3">BharatPay Sovereign Concurrency Engine</h4>
-                        <p class="text-white-50 mb-4" style="font-size: 14px; line-height: 1.6;">
-                            Ultra-scalable transactional ledger handling 48,000 requests per second at peak festival
-                            spikes with zero ledger inconsistency.
-                        </p>
-                        <div
-                            class="border-top border-secondary border-opacity-25 pt-3 d-flex align-items-center justify-content-between">
-                            <span class="text-muted small text-uppercase">Ledger Integrity</span>
-                            <span class="case-impact-metric text-gradient-gold">99.999% Zero Drift</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
-                    <div class="case-card">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <span
-                                class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-25 py-2 px-3"
-                                style="font-size: 11px;">HEALTHCARE &amp; RAG AI</span>
-                            <span class="text-white-50 small"><i class="fa fa-brain me-1"></i>Air-Gapped</span>
-                        </div>
-                        <h4 class="text-white mb-3">NeuroPulse Diagnostic Inference Mesh</h4>
-                        <p class="text-white-50 mb-4" style="font-size: 14px; line-height: 1.6;">
-                            Distributed on-premise RAG and computer vision cluster for automated pathology
-                            classification across 22 regional medical centers.
-                        </p>
-                        <div
-                            class="border-top border-secondary border-opacity-25 pt-3 d-flex align-items-center justify-content-between">
-                            <span class="text-muted small text-uppercase">Latency Cut</span>
-                            <span class="case-impact-metric">-64% Review Time</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Flagship Case Studies End -->
-
-    <!-- Technology Stack Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background: #070b14;">
-        <div class="container py-4">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 700px;">
-                <h5 class="fw-bold text-gradient-cyan text-uppercase" style="letter-spacing: 2px;">Engineering Pedigree
-                </h5>
-                <h1 class="mb-0 text-white">Computational Foundation</h1>
-                <p class="text-white-50 mt-3">Built on modern, type-safe, concurrent, and high-throughput technological
-                    architectures.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.2s">
-                    <div class="tech-stack-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa fa-laptop-code text-primary fs-4 me-3"></i>
-                            <h5 class="text-white mb-0 fw-bold">Frontend &amp; Mobile</h5>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <span class="tech-tag-badge gold">Next.js 15</span>
-                            <span class="tech-tag-badge">React 19</span>
-                            <span class="tech-tag-badge">TypeScript</span>
-                            <span class="tech-tag-badge">TailwindCSS</span>
-                            <span class="tech-tag-badge gold">Flutter Native</span>
-                            <span class="tech-tag-badge">WebAssembly</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.4s">
-                    <div class="tech-stack-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa fa-server text-warning fs-4 me-3"></i>
-                            <h5 class="text-white mb-0 fw-bold">Systems &amp; Core</h5>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <span class="tech-tag-badge gold">Rust</span>
-                            <span class="tech-tag-badge">Go (Golang)</span>
-                            <span class="tech-tag-badge">Python 3.12</span>
-                            <span class="tech-tag-badge">Node.js / Bun</span>
-                            <span class="tech-tag-badge">gRPC &amp; Protobuf</span>
-                            <span class="tech-tag-badge">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="tech-stack-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa fa-cloud text-info fs-4 me-3"></i>
-                            <h5 class="text-white mb-0 fw-bold">Cloud &amp; DevOps</h5>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <span class="tech-tag-badge gold">Kubernetes (K8s)</span>
-                            <span class="tech-tag-badge">AWS Sovereign</span>
-                            <span class="tech-tag-badge">Terraform IaC</span>
-                            <span class="tech-tag-badge">Docker Engine</span>
-                            <span class="tech-tag-badge">Istio Service Mesh</span>
-                            <span class="tech-tag-badge">GitOps CI/CD</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow zoomIn" data-wow-delay="0.8s">
-                    <div class="tech-stack-card">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa fa-brain text-success fs-4 me-3"></i>
-                            <h5 class="text-white mb-0 fw-bold">AI &amp; Vector Data</h5>
-                        </div>
-                        <div class="d-flex flex-wrap">
-                            <span class="tech-tag-badge gold">PyTorch 2.5</span>
-                            <span class="tech-tag-badge">Vector RAG</span>
-                            <span class="tech-tag-badge">Milvus Vector DB</span>
-                            <span class="tech-tag-badge">TensorRT-LLM</span>
-                            <span class="tech-tag-badge">Air-Gapped LLMs</span>
-                            <span class="tech-tag-badge">Apache Kafka</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Technology Stack End -->
-
-
     <!-- Quote Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -739,71 +540,188 @@
                 <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
                 <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
             </div>
+            <div id="gmb-summary-badge" class="text-center mb-3">
+                <div class="gmb-rating-badge d-inline-flex align-items-center gap-3 bg-white px-4 py-2 rounded-pill shadow-sm mb-4 border" style="border-color: rgba(14, 165, 233, 0.3) !important;">
+                    <div class="d-flex align-items-center gap-2">
+                        <svg width="22" height="22" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                        <span class="fw-bold text-dark fs-6">4.5</span>
+                        <div class="star-rating small">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                        </div>
+                    </div>
+                    <span class="text-muted small border-start ps-3">
+                        <strong class="text-dark">2 Google Reviews</strong>
+                    </span>
+                    <a href="https://www.google.com/search?q=Golden+Sparrow+SofTech+Rajkot" target="_blank" class="btn btn-sm btn-primary rounded-pill px-3 py-1 text-white ms-2" style="font-size: 12px; font-weight: 600;">
+                        <i class="fas fa-pen me-1"></i> Review Us
+                    </a>
+                </div>
+            </div>
+
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
-                <div class="testimonial-item bg-light my-4 rounded-3 p-4 shadow-sm"
-                    style="border: 1px solid rgba(14, 165, 233, 0.15);">
-                    <div class="d-flex align-items-center border-bottom pb-4 mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg"
-                            style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--primary);"
-                            alt="Vikramaditya Roy">
-                        <div class="ps-3">
-                            <h5 class="text-primary mb-0 fw-bold">Vikramaditya Roy</h5>
-                            <small class="text-muted fw-semi-bold">CTO, Zenith FinTech Global</small>
+                <div class="testimonial-item gmb-review-card bg-light my-4 rounded-3 p-4 shadow-sm" style="border: 1px solid rgba(14, 165, 233, 0.2); position: relative;">
+                    <div class="d-flex align-items-center border-bottom pb-3 mb-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 55px; height: 55px; object-fit: cover; border: 2px solid #0ea5e9;" alt="Kishan Patel">
+                        <div class="ps-3 flex-grow-1">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="text-primary mb-0 fw-bold fs-6">Kishan Patel</h5>
+                                <svg class="ms-2" width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mt-1">
+                                <div class="star-rating small">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <small class="text-muted" style="font-size: 11px;">a month ago</small>
+                            </div>
                         </div>
                     </div>
-                    <p class="mb-0 text-secondary" style="font-size: 15px; line-height: 1.6;">
-                        "Golden Sparrow SofTech executed a flawless live migration of our UPI processing engine with
-                        zero seconds of unplanned interruption. Their adherence to sovereign cloud governance is
-                        unmatched."
+                    <p class="mb-0 text-secondary" style="font-size: 14.5px; line-height: 1.6; min-height: 72px;">
+                        &ldquo;Exceptional website development and custom software solutions! Golden Sparrow SofTech delivered our business web application ahead of schedule with high performance and responsive design. Highly recommend their IT expertise in Rajkot.&rdquo;
                     </p>
+                    <div class="mt-3 pt-2 border-top d-flex align-items-center justify-content-between">
+                        <span class="badge bg-white text-secondary border small px-2 py-1" style="font-size: 11px;">
+                            <i class="fab fa-google text-primary me-1"></i>Local Guide
+                        </span>
+                        <a href="https://www.google.com/search?q=Golden+Sparrow+SofTech+Rajkot" target="_blank" class="text-primary text-decoration-none small fw-semi-bold" style="font-size: 11.5px;">
+                            View on Google <i class="fas fa-external-link-alt ms-1" style="font-size: 10px;"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="testimonial-item bg-light my-4 rounded-3 p-4 shadow-sm"
-                    style="border: 1px solid rgba(14, 165, 233, 0.15);">
-                    <div class="d-flex align-items-center border-bottom pb-4 mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg"
-                            style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--accent-gold);"
-                            alt="Dr. Aarti Narang">
-                        <div class="ps-3">
-                            <h5 class="text-primary mb-0 fw-bold">Dr. Aarti Narang</h5>
-                            <small class="text-muted fw-semi-bold">Head of Digital, Lifeline MedTech</small>
+                <div class="testimonial-item gmb-review-card bg-light my-4 rounded-3 p-4 shadow-sm" style="border: 1px solid rgba(14, 165, 233, 0.2); position: relative;">
+                    <div class="d-flex align-items-center border-bottom pb-3 mb-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 55px; height: 55px; object-fit: cover; border: 2px solid #0ea5e9;" alt="Ravi Solanki">
+                        <div class="ps-3 flex-grow-1">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="text-primary mb-0 fw-bold fs-6">Ravi Solanki</h5>
+                                <svg class="ms-2" width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mt-1">
+                                <div class="star-rating small">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <small class="text-muted" style="font-size: 11px;">2 months ago</small>
+                            </div>
                         </div>
                     </div>
-                    <p class="mb-0 text-secondary" style="font-size: 15px; line-height: 1.6;">
-                        "The sovereign RAG architecture engineered by their team delivered a 64% reduction in turnaround
-                        time for oncology pathology data. Truly elite computational engineering pedigree."
+                    <p class="mb-0 text-secondary" style="font-size: 14.5px; line-height: 1.6; min-height: 72px;">
+                        &ldquo;Very professional team for custom CRM &amp; ERP development and web design. Their support and attention to detail are amazing. Great experience working with them!&rdquo;
                     </p>
+                    <div class="mt-3 pt-2 border-top d-flex align-items-center justify-content-between">
+                        <span class="badge bg-white text-secondary border small px-2 py-1" style="font-size: 11px;">
+                            <i class="fab fa-google text-primary me-1"></i>Verified Client
+                        </span>
+                        <a href="https://www.google.com/search?q=Golden+Sparrow+SofTech+Rajkot" target="_blank" class="text-primary text-decoration-none small fw-semi-bold" style="font-size: 11.5px;">
+                            View on Google <i class="fas fa-external-link-alt ms-1" style="font-size: 10px;"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="testimonial-item bg-light my-4 rounded-3 p-4 shadow-sm"
-                    style="border: 1px solid rgba(14, 165, 233, 0.15);">
-                    <div class="d-flex align-items-center border-bottom pb-4 mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg"
-                            style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--secondary);"
-                            alt="Mukesh Kulkarni">
-                        <div class="ps-3">
-                            <h5 class="text-primary mb-0 fw-bold">Mukesh Kulkarni</h5>
-                            <small class="text-muted fw-semi-bold">VP Engineering, Garuda Logistics Cloud</small>
+                <div class="testimonial-item gmb-review-card bg-light my-4 rounded-3 p-4 shadow-sm" style="border: 1px solid rgba(14, 165, 233, 0.2); position: relative;">
+                    <div class="d-flex align-items-center border-bottom pb-3 mb-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" style="width: 55px; height: 55px; object-fit: cover; border: 2px solid #0ea5e9;" alt="Harshil Mehta">
+                        <div class="ps-3 flex-grow-1">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="text-primary mb-0 fw-bold fs-6">Harshil Mehta</h5>
+                                <svg class="ms-2" width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mt-1">
+                                <div class="star-rating small">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <small class="text-muted" style="font-size: 11px;">3 months ago</small>
+                            </div>
                         </div>
                     </div>
-                    <p class="mb-0 text-secondary" style="font-size: 15px; line-height: 1.6;">
-                        "Their team works with the disciplined rigor of defense engineers. Their tagline isn't just
-                        marketing; you feel that engineering pride in every microservice, commit, and load test."
+                    <p class="mb-0 text-secondary" style="font-size: 14.5px; line-height: 1.6; min-height: 72px;">
+                        &ldquo;Best IT consultancy and custom software development company in Rajkot. Smooth communication, top-tier engineering, and great support throughout the project.&rdquo;
                     </p>
+                    <div class="mt-3 pt-2 border-top d-flex align-items-center justify-content-between">
+                        <span class="badge bg-white text-secondary border small px-2 py-1" style="font-size: 11px;">
+                            <i class="fab fa-google text-primary me-1"></i>Verified Review
+                        </span>
+                        <a href="https://www.google.com/search?q=Golden+Sparrow+SofTech+Rajkot" target="_blank" class="text-primary text-decoration-none small fw-semi-bold" style="font-size: 11.5px;">
+                            View on Google <i class="fas fa-external-link-alt ms-1" style="font-size: 10px;"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="testimonial-item bg-light my-4 rounded-3 p-4 shadow-sm"
-                    style="border: 1px solid rgba(14, 165, 233, 0.15);">
-                    <div class="d-flex align-items-center border-bottom pb-4 mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-4.jpg"
-                            style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--primary);"
-                            alt="Ananya Deshmukh">
-                        <div class="ps-3">
-                            <h5 class="text-primary mb-0 fw-bold">Ananya Deshmukh</h5>
-                            <small class="text-muted fw-semi-bold">Director Infra, Bharat Smart Utilities</small>
+                <div class="testimonial-item gmb-review-card bg-light my-4 rounded-3 p-4 shadow-sm" style="border: 1px solid rgba(14, 165, 233, 0.2); position: relative;">
+                    <div class="d-flex align-items-center border-bottom pb-3 mb-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 55px; height: 55px; object-fit: cover; border: 2px solid #0ea5e9;" alt="Kishan Patel">
+                        <div class="ps-3 flex-grow-1">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="text-primary mb-0 fw-bold fs-6">Kishan Patel</h5>
+                                <svg class="ms-2" width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mt-1">
+                                <div class="star-rating small">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <small class="text-muted" style="font-size: 11px;">a month ago</small>
+                            </div>
                         </div>
                     </div>
-                    <p class="mb-0 text-secondary" style="font-size: 15px; line-height: 1.6;">
-                        "They architected our telemetry ingestion cluster handling over 250M daily device events.
-                        Sub-15ms latency, ironclad zero-trust security, and stellar engineering delivery."
+                    <p class="mb-0 text-secondary" style="font-size: 14.5px; line-height: 1.6; min-height: 72px;">
+                        &ldquo;Exceptional website development and custom software solutions! Golden Sparrow SofTech delivered our business web application ahead of schedule with high performance and responsive design. Highly recommend their IT expertise in Rajkot.&rdquo;
                     </p>
+                    <div class="mt-3 pt-2 border-top d-flex align-items-center justify-content-between">
+                        <span class="badge bg-white text-secondary border small px-2 py-1" style="font-size: 11px;">
+                            <i class="fab fa-google text-primary me-1"></i>Local Guide
+                        </span>
+                        <a href="https://www.google.com/search?q=Golden+Sparrow+SofTech+Rajkot" target="_blank" class="text-primary text-decoration-none small fw-semi-bold" style="font-size: 11.5px;">
+                            View on Google <i class="fas fa-external-link-alt ms-1" style="font-size: 10px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="testimonial-item gmb-review-card bg-light my-4 rounded-3 p-4 shadow-sm" style="border: 1px solid rgba(14, 165, 233, 0.2); position: relative;">
+                    <div class="d-flex align-items-center border-bottom pb-3 mb-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 55px; height: 55px; object-fit: cover; border: 2px solid #0ea5e9;" alt="Ravi Solanki">
+                        <div class="ps-3 flex-grow-1">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h5 class="text-primary mb-0 fw-bold fs-6">Ravi Solanki</h5>
+                                <svg class="ms-2" width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mt-1">
+                                <div class="star-rating small">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <small class="text-muted" style="font-size: 11px;">2 months ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0 text-secondary" style="font-size: 14.5px; line-height: 1.6; min-height: 72px;">
+                        &ldquo;Very professional team for custom CRM &amp; ERP development and web design. Their support and attention to detail are amazing. Great experience working with them!&rdquo;
+                    </p>
+                    <div class="mt-3 pt-2 border-top d-flex align-items-center justify-content-between">
+                        <span class="badge bg-white text-secondary border small px-2 py-1" style="font-size: 11px;">
+                            <i class="fab fa-google text-primary me-1"></i>Verified Client
+                        </span>
+                        <a href="https://www.google.com/search?q=Golden+Sparrow+SofTech+Rajkot" target="_blank" class="text-primary text-decoration-none small fw-semi-bold" style="font-size: 11.5px;">
+                            View on Google <i class="fas fa-external-link-alt ms-1" style="font-size: 10px;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1094,6 +1012,19 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+    <script src="js/google-reviews.js"></script>
+    <!-- Google Translate Element & Init -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,gu',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

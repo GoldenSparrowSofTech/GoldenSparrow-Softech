@@ -1,0 +1,36 @@
+{
+  "business_name": "Golden Sparrow SofTech",
+  "category": "Website designer in Rajkot, Gujarat",
+  "address": "Cosmo Complex, 314, Kalavad Rd, near Mahila College Chowk, Janata Society, Sardarnagar, Rajkot, Gujarat 360001",
+  "phone": "+91 79905 90007",
+  "rating": 4.5,
+  "total_reviews": 2,
+  "google_maps_url": "https://www.google.com/search?q=Golden+Sparrow+SofTech+Rajkot",
+  "write_review_url": "https://www.google.com/search?q=Golden+Sparrow+SofTech+Rajkot#lrd=0x0:0x0,3,,,",
+  "reviews": [
+    {
+      "author_name": "Kishan Patel",
+      "author_photo": "img/testimonial-1.jpg",
+      "rating": 5,
+      "relative_time_description": "a month ago",
+      "text": "Exceptional website development and custom software solutions! Golden Sparrow SofTech delivered our business web application ahead of schedule with high performance and responsive design. Highly recommend their IT expertise in Rajkot.",
+      "badge": "Local Guide"
+    },
+    {
+      "author_name": "Ravi Solanki",
+      "author_photo": "img/testimonial-2.jpg",
+      "rating": 5,
+      "relative_time_description": "2 months ago",
+      "text": "Very professional team for custom CRM & ERP development and web design. Their support and attention to detail are amazing. Great experience working with them!",
+      "badge": "Verified Client"
+    },
+    {
+      "author_name": "Harshil Mehta",
+      "author_photo": "img/testimonial-3.jpg",
+      "rating": 5,
+      "relative_time_description": "3 months ago",
+      "text": "Best IT consultancy and custom software development company in Rajkot. Smooth communication, top-tier engineering, and great support throughout the project.",
+      "badge": "Verified Review"
+    }
+  ]
+}

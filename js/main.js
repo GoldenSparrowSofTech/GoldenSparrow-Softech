@@ -164,5 +164,41 @@
         window.open(waUrl, '_blank');
     });
 
+
+    // Language Switcher Logic (English, Hindi, Gujarati)
+    window.setLanguage = function (lang) {
+        localStorage.setItem('userLanguage', lang);
+        
+        // Update googtrans cookie
+        document.cookie = "googtrans=/en/" + lang + "; path=/;";
+        document.cookie = "googtrans=/en/" + lang + "; path=/; domain=" + window.location.hostname + ";";
+        document.cookie = "googtrans=/en/" + lang + "; path=/; domain=." + window.location.hostname + ";";
+
+        const combo = document.querySelector('.goog-te-combo');
+        if (combo) {
+            combo.value = lang;
+            combo.dispatchEvent(new Event('change'));
+        } else {
+            location.reload();
+        }
+        updateLangLabel(lang);
+    };
+
+    function updateLangLabel(lang) {
+        const labels = {
+            'en': 'English',
+            'hi': 'हिन्दी',
+            'gu': 'ગુજરાતી'
+        };
+        const textEl = document.getElementById('selectedLangText');
+        if (textEl && labels[lang]) {
+            textEl.textContent = labels[lang];
+        }
+    }
+
+    // Initialize saved language label on page load
+    const savedLang = localStorage.getItem('userLanguage') || 'en';
+    updateLangLabel(savedLang);
+
 })(jQuery);
 

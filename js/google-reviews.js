@@ -67,7 +67,23 @@
         var $carousel = $(".testimonial-carousel");
         if ($carousel.length === 0) return;
 
-        // Try get_reviews.php first, fallback to reviews.json
+        // On static hosting (like GitHub Pages or local file), skip PHP and load reviews.json directly
+        var isStaticHost = window.location.protocol === 'file:' || window.location.hostname.indexOf('github.io') !== -1;
+
+        if (isStaticHost) {
+            $.ajax({
+                url: "reviews.json",
+                dataType: "json",
+                timeout: 5000
+            }).done(function (data) {
+                renderGMB(data);
+            }).fail(function (err) {
+                console.warn("GMB reviews could not be loaded", err);
+            });
+            return;
+        }
+
+        // Try get_reviews.php first on PHP-capable servers, fallback to reviews.json
         $.ajax({
             url: "get_reviews.php",
             dataType: "json",

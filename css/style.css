@@ -1125,3 +1125,122 @@ body {
 .star-rating i.text-warning {
     color: #f59e0b !important;
 }
+
+/* WOW.js Safety: Ensure content is always visible and never stuck in hidden blank state */
+.wow {
+    visibility: visible !important;
+}
+
+/*** Service Detail Cards (Two-Tier Architecture) ***/
+.service-detail-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(14, 165, 233, 0.15);
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+    transition: all 0.35s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 26px;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-detail-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0ea5e9, #6366f1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-detail-card.cyber-card::before {
+    background: linear-gradient(90deg, #0284c7, #38bdf8);
+}
+
+.service-detail-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px -10px rgba(14, 165, 233, 0.2);
+    border-color: rgba(14, 165, 233, 0.35);
+}
+
+.service-detail-card:hover::before {
+    opacity: 1;
+}
+
+.service-card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #0ea5e9, #6366f1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 22px;
+    box-shadow: 0 8px 18px rgba(14, 165, 233, 0.25);
+    margin-bottom: 18px;
+    flex-shrink: 0;
+}
+
+.service-detail-card.cyber-card .service-card-icon {
+    background: linear-gradient(135deg, #0369a1, #0ea5e9);
+    box-shadow: 0 8px 18px rgba(2, 132, 199, 0.25);
+}
+
+.service-sublist {
+    list-style: none;
+    padding-left: 0;
+    margin: 16px 0 20px;
+    flex-grow: 1;
+}
+
+.service-sublist li {
+    font-size: 13.5px;
+    color: #475569;
+    padding: 7px 0;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.5;
+    border-bottom: 1px dashed rgba(226, 232, 240, 0.8);
+}
+
+.service-sublist li:last-child {
+    border-bottom: none;
+}
+
+.service-sublist li i {
+    font-size: 13px;
+    margin-top: 3px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.service-quick-nav {
+    display: inline-flex;
+    background: #f1f5f9;
+    padding: 6px;
+    border-radius: 50px;
+    border: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+.service-quick-nav .nav-link-btn {
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: #334155;
+    transition: all 0.3s ease;
+}
+
+.service-quick-nav .nav-link-btn:hover,
+.service-quick-nav .nav-link-btn.active {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+}

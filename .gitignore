@@ -4,3 +4,6 @@ Thumbs.db
 reviews_cache.json
 *.log
 
+
+.vercel
+.env*

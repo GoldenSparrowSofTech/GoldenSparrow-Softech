@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Engineering Insights & Tech Architecture | Golden Sparrow SofTech</title>
+    <title>Engineering Insights &amp; Technical Whitepapers | Golden Sparrow SofTech</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Cloud Architecture, Microservices, DevSecOps, Enterprise AI, System Design, Golden Sparrow SofTech" name="keywords">
     <meta content="In-depth technical analyses, architecture case studies, and engineering perspectives from the team at Golden Sparrow SofTech." name="description">
@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -27,470 +27,459 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+    <!-- Direction B: Technology Enterprise Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
     </div>
     <!-- Spinner End -->
 
-
-            <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block border-bottom border-secondary border-opacity-10">
-        <div class="row gx-0 align-items-center" style="min-height: 44px;">
-            <div class="col-lg-9 text-center text-lg-start py-2">
-                <div class="d-inline-flex align-items-center flex-wrap gap-4">
-                    <span class="topbar-info-item"><i class="fa fa-map-marker-alt"></i>Mavdi, Rajkot, Gujarat</span>
-                    <span class="topbar-info-item"><i class="fa fa-phone-alt"></i><a href="tel:+917990590007" class="linkcolor text-nowrap">+91 79905 90007</a></span>
-                    <span class="topbar-info-item"><i class="fa fa-envelope-open"></i><a href="mailto:goldensparrowsoftech@gmail.com" class="linkcolor text-nowrap">goldensparrowsoftech@gmail.com</a></span>
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="d-inline-flex align-items-center gap-4">
+                        <span class="topbar-contact-item"><i class="fa fa-map-marker-alt text-cyan"></i>Mavdi, Rajkot, Gujarat</span>
+                        <a href="tel:+917990590007" class="topbar-contact-item"><i class="fa fa-phone-alt text-cyan"></i>+91 79905 90007</a>
+                        <a href="mailto:goldensparrowsoftech@gmail.com" class="topbar-contact-item"><i class="fa fa-envelope text-cyan"></i>goldensparrowsoftech@gmail.com</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 text-center text-lg-end py-2">
-                <div class="d-inline-flex align-items-center gap-2">
-                    <a class="topbar-social-btn" href="https://twitter.com/golden_sparrow9" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a class="topbar-social-btn" href="https://www.facebook.com/profile.php?id=100092878565032" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a class="topbar-social-btn" href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="topbar-social-btn" href="https://www.instagram.com/goldensparrowsoftech/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a class="topbar-social-btn" href="https://api.whatsapp.com/send?phone=917990590007&text=Hello,%20I%27m%20interested%20in%20your%20services." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <div class="col-lg-4 text-end">
+                    <div class="d-inline-flex align-items-center gap-2">
+                        <a class="topbar-social-btn" href="https://twitter.com/golden_sparrow9" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="topbar-social-btn" href="https://www.facebook.com/profile.php?id=100092878565032" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="topbar-social-btn" href="https://www.instagram.com/goldensparrowsoftech/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="topbar-social-btn" href="https://api.whatsapp.com/send?phone=917990590007&text=Hello,%20I%27m%20interested%20in%20your%20services." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Topbar End -->
 
-
     <!-- Navbar Start -->
     <div class="container-fluid position-relative p-0">
-                <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0 navbar-brand-wrapper">
-                <img src="img/logo.png" alt="Golden Sparrow SofTech Logo" class="navbar-brand-logo">
-                <div class="navbar-brand-text">
-                    <span class="navbar-brand-title">Golden Sparrow <span class="accent-tech">SofTech</span></span>
-                    <span class="navbar-brand-subtitle">Make India Golden Sparrow Again</span>
-                </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                            <a href="feature.html" class="dropdown-item">Our Features</a>
-                            <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5 px-3 py-3">
+            <div class="container">
+                <a href="index.html" class="navbar-brand p-0 navbar-brand-wrapper">
+                    <img src="img/logo.png" alt="Golden Sparrow SofTech Logo" class="navbar-brand-logo">
+                    <div class="navbar-brand-text">
+                        <span class="navbar-brand-title">Golden Sparrow <span class="accent-tech">SofTech</span></span>
+                        <span class="navbar-brand-subtitle">Make India Golden Sparrow Again</span>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Practices</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="price.html" class="dropdown-item">Engagement Models</a>
+                                <a href="feature.html" class="dropdown-item">Engineering SLA</a>
+                                <a href="quote.html" class="dropdown-item">Architecture Scoping</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="dropdown ms-lg-3 my-2 my-lg-0">
+                        <button class="btn btn-sm lang-dropdown-btn dropdown-toggle d-inline-flex align-items-center" type="button" id="langSelect" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-globe text-cyan me-2"></i>
+                            <span id="selectedLangText">English</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow" aria-labelledby="langSelect">
+                            <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('en')">English</a></li>
+                            <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('hi')">हिन्दी (Hindi)</a></li>
+                            <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('gu')">ગુજરાતી (Gujarati)</a></li>
+                        </ul>
+                    </div>
+                    <a href="quote.html" class="btn btn-primary ms-3 d-none d-lg-inline-flex"><i class="fa fa-terminal me-1"></i>Consult Engineering</a>
                 </div>
-                <div class="dropdown ms-lg-3 my-2 my-lg-0">
-                    <button class="btn btn-sm lang-dropdown-btn dropdown-toggle d-inline-flex align-items-center" type="button" id="langSelect" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-globe text-primary me-2"></i>
-                        <span id="selectedLangText">English</span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow" aria-labelledby="langSelect">
-                        <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('en')">English</a></li>
-                        <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('hi')">हिन्दी (Hindi)</a></li>
-                        <li><a class="dropdown-item py-2" href="javascript:void(0)" onclick="setLanguage('gu')">ગુજરાતી (Gujarati)</a></li>
-                    </ul>
-                </div>
-                <a href="quote.html" class="btn btn-primary py-2 px-4 ms-3 d-none d-lg-block"><i class="fa fa-rocket me-2"></i>Get A Quote</a>
             </div>
         </nav>
 
-        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
-            <div class="row py-5">
-                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">Engineering Insights</h1>
-                    <a href="index.html" class="h5 text-white">Home</a>
-                    <i class="far fa-circle text-white px-2"></i>
-                    <a href="blog.html" class="h5 text-white">Insights</a>
+        <!-- Inner Page Header -->
+        <div class="container-fluid py-5 bg-header">
+            <div class="container py-5 text-center">
+                <h1 class="hero-title text-white mb-3">Engineering Insights &amp; Whitepapers</h1>
+                <div class="d-inline-flex align-items-center gap-2" style="font-size: 15px;">
+                    <a href="index.html" class="text-cyan">Home</a>
+                    <span class="text-muted">/</span>
+                    <span class="text-white">Insights</span>
                 </div>
             </div>
         </div>
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
+    <!-- Insights Content Start -->
+    <section class="py-5" style="background-color: var(--bg-main);">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title-enterprise">Architecture Studies &amp; Systems Analyses</h2>
+                    <p class="lead" style="color: var(--text-secondary); font-size: 17px; line-height: 1.7;">
+                        In-depth technical papers, distributed systems benchmarks, and production post-mortems from our senior engineering team.
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Full Screen Search End -->
-
-
-    <!-- Blog Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
             <div class="row g-5">
-                <!-- Blog list Start -->
+                <!-- Articles Grid Start -->
                 <div class="col-lg-8">
-                    <div class="row g-5">
+                    <div class="row g-4">
                         <!-- Post 1 -->
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
-                            <div class="blog-item bg-light rounded overflow-hidden shadow-sm border border-light h-100 d-flex flex-column">
-                                <div class="blog-img position-relative overflow-hidden" style="height: 220px;">
-                                    <img class="img-fluid w-100 h-100" src="img/blog-cloud.jpg" alt="Cloud Architecture" style="object-fit: cover;">
-                                    <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-4 py-2 px-3 fw-bold text-decoration-none" href="detail.html" style="font-size: 12px;">Cloud Architecture</a>
+                        <div class="col-md-6">
+                            <div class="article-enterprise-card h-100">
+                                <div class="position-relative overflow-hidden" style="height: 200px;">
+                                    <img class="w-100 h-100" src="img/blog-cloud.jpg" alt="Cloud Architecture" style="object-fit: cover;">
+                                    <span class="badge position-absolute top-0 start-0 m-3" style="background-color: var(--primary-blue); color: #fff; font-size: 11.5px; font-weight: 600;">Cloud Architecture</span>
                                 </div>
                                 <div class="p-4 d-flex flex-column flex-grow-1">
-                                    <div class="d-flex mb-3 text-muted" style="font-size: 13px;">
-                                        <small class="me-3"><i class="far fa-user text-primary me-2"></i>Vishal Parmar</small>
-                                        <small><i class="far fa-calendar-alt text-primary me-2"></i>March 2026</small>
+                                    <div class="d-flex align-items-center gap-3 mb-2 text-muted" style="font-size: 13px;">
+                                        <span><i class="far fa-user text-cyan me-1"></i>Vishal Parmar</span>
+                                        <span><i class="far fa-calendar-alt text-cyan me-1"></i>March 2026</span>
                                     </div>
-                                    <h4 class="mb-3 text-primary"><a href="detail.html" class="text-reset text-decoration-none">Architecting Resilient Multi-Cloud Microservices</a></h4>
-                                    <p class="text-muted flex-grow-1" style="font-size: 14px;">Production patterns, service mesh strategies, and distributed observability pipelines required to achieve 99.99% uptime across hybrid cloud workloads.</p>
-                                    <a class="text-uppercase fw-bold text-primary text-decoration-none mt-2" href="detail.html">Read Analysis <i class="bi bi-arrow-right ms-1"></i></a>
+                                    <h3 class="fs-5 mb-3"><a href="detail.html" class="text-white text-decoration-none hover-cyan">Architecting Resilient Multi-Cloud Microservices</a></h3>
+                                    <p class="text-muted flex-grow-1 mb-3" style="font-size: 14px; line-height: 1.6;">
+                                        Production patterns, service mesh strategies, and distributed observability pipelines required to achieve 99.99% uptime across hybrid cloud workloads.
+                                    </p>
+                                    <a class="text-cyan fw-bold text-decoration-none font-mono" href="detail.html" style="font-size: 13px;">
+                                        Read Analysis <i class="bi bi-arrow-right ms-1"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Post 2 -->
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.3s">
-                            <div class="blog-item bg-light rounded overflow-hidden shadow-sm border border-light h-100 d-flex flex-column">
-                                <div class="blog-img position-relative overflow-hidden" style="height: 220px;">
-                                    <img class="img-fluid w-100 h-100" src="img/blog-ai.jpg" alt="Enterprise AI" style="object-fit: cover;">
-                                    <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-4 py-2 px-3 fw-bold text-decoration-none" href="detail.html" style="font-size: 12px;">AI &amp; Data Systems</a>
+                        <div class="col-md-6">
+                            <div class="article-enterprise-card h-100">
+                                <div class="position-relative overflow-hidden" style="height: 200px;">
+                                    <img class="w-100 h-100" src="img/blog-ai.jpg" alt="Enterprise AI" style="object-fit: cover;">
+                                    <span class="badge position-absolute top-0 start-0 m-3" style="background-color: var(--primary-blue); color: #fff; font-size: 11.5px; font-weight: 600;">AI &amp; Data Systems</span>
                                 </div>
                                 <div class="p-4 d-flex flex-column flex-grow-1">
-                                    <div class="d-flex mb-3 text-muted" style="font-size: 13px;">
-                                        <small class="me-3"><i class="far fa-user text-primary me-2"></i>Priya Mehta</small>
-                                        <small><i class="far fa-calendar-alt text-primary me-2"></i>February 2026</small>
+                                    <div class="d-flex align-items-center gap-3 mb-2 text-muted" style="font-size: 13px;">
+                                        <span><i class="far fa-user text-cyan me-1"></i>Priya Mehta</span>
+                                        <span><i class="far fa-calendar-alt text-cyan me-1"></i>February 2026</span>
                                     </div>
-                                    <h4 class="mb-3 text-primary"><a href="detail.html" class="text-reset text-decoration-none">Operationalizing Generative AI &amp; Enterprise LLMs</a></h4>
-                                    <p class="text-muted flex-grow-1" style="font-size: 14px;">Moving beyond experimentation to production: enterprise RAG pipelines, fine-tuned domain models, and strict data confidentiality controls.</p>
-                                    <a class="text-uppercase fw-bold text-primary text-decoration-none mt-2" href="detail.html">Read Analysis <i class="bi bi-arrow-right ms-1"></i></a>
+                                    <h3 class="fs-5 mb-3"><a href="detail.html" class="text-white text-decoration-none hover-cyan">Operationalizing Generative AI &amp; Enterprise LLMs</a></h3>
+                                    <p class="text-muted flex-grow-1 mb-3" style="font-size: 14px; line-height: 1.6;">
+                                        Moving beyond experimentation to production: enterprise RAG pipelines, fine-tuned domain models, and strict data confidentiality controls.
+                                    </p>
+                                    <a class="text-cyan fw-bold text-decoration-none font-mono" href="detail.html" style="font-size: 13px;">
+                                        Read Analysis <i class="bi bi-arrow-right ms-1"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Post 3 -->
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
-                            <div class="blog-item bg-light rounded overflow-hidden shadow-sm border border-light h-100 d-flex flex-column">
-                                <div class="blog-img position-relative overflow-hidden" style="height: 220px;">
-                                    <img class="img-fluid w-100 h-100" src="img/blog-security.jpg" alt="Zero Trust Security" style="object-fit: cover;">
-                                    <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-4 py-2 px-3 fw-bold text-decoration-none" href="detail.html" style="font-size: 12px;">DevSecOps</a>
+                        <div class="col-md-6">
+                            <div class="article-enterprise-card h-100">
+                                <div class="position-relative overflow-hidden" style="height: 200px;">
+                                    <img class="w-100 h-100" src="img/blog-security.jpg" alt="Zero Trust Security" style="object-fit: cover;">
+                                    <span class="badge position-absolute top-0 start-0 m-3" style="background-color: var(--primary-blue); color: #fff; font-size: 11.5px; font-weight: 600;">DevSecOps</span>
                                 </div>
                                 <div class="p-4 d-flex flex-column flex-grow-1">
-                                    <div class="d-flex mb-3 text-muted" style="font-size: 13px;">
-                                        <small class="me-3"><i class="far fa-user text-primary me-2"></i>Rushabh Makim</small>
-                                        <small><i class="far fa-calendar-alt text-primary me-2"></i>January 2026</small>
+                                    <div class="d-flex align-items-center gap-3 mb-2 text-muted" style="font-size: 13px;">
+                                        <span><i class="far fa-user text-cyan me-1"></i>Rushabh Makim</span>
+                                        <span><i class="far fa-calendar-alt text-cyan me-1"></i>January 2026</span>
                                     </div>
-                                    <h4 class="mb-3 text-primary"><a href="detail.html" class="text-reset text-decoration-none">Zero Trust Architecture for Modern DevOps</a></h4>
-                                    <p class="text-muted flex-grow-1" style="font-size: 14px;">Implementing cryptographically verified build chains, automated SAST/DAST gating, and immutable infrastructure patterns.</p>
-                                    <a class="text-uppercase fw-bold text-primary text-decoration-none mt-2" href="detail.html">Read Analysis <i class="bi bi-arrow-right ms-1"></i></a>
+                                    <h3 class="fs-5 mb-3"><a href="detail.html" class="text-white text-decoration-none hover-cyan">Zero Trust Architecture for Modern DevOps</a></h3>
+                                    <p class="text-muted flex-grow-1 mb-3" style="font-size: 14px; line-height: 1.6;">
+                                        Implementing cryptographically verified build chains, automated SAST/DAST gating, and immutable infrastructure patterns.
+                                    </p>
+                                    <a class="text-cyan fw-bold text-decoration-none font-mono" href="detail.html" style="font-size: 13px;">
+                                        Read Analysis <i class="bi bi-arrow-right ms-1"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Post 4 -->
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.3s">
-                            <div class="blog-item bg-light rounded overflow-hidden shadow-sm border border-light h-100 d-flex flex-column">
-                                <div class="blog-img position-relative overflow-hidden" style="height: 220px;">
-                                    <img class="img-fluid w-100 h-100" src="img/service-cloud.jpg" alt="Kubernetes Multi-Tenancy" style="object-fit: cover;">
-                                    <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-4 py-2 px-3 fw-bold text-decoration-none" href="detail.html" style="font-size: 12px;">Cloud Native</a>
+                        <div class="col-md-6">
+                            <div class="article-enterprise-card h-100">
+                                <div class="position-relative overflow-hidden" style="height: 200px;">
+                                    <img class="w-100 h-100" src="img/service-cloud.jpg" alt="Kubernetes Multi-Tenancy" style="object-fit: cover;">
+                                    <span class="badge position-absolute top-0 start-0 m-3" style="background-color: var(--primary-blue); color: #fff; font-size: 11.5px; font-weight: 600;">Cloud Native</span>
                                 </div>
                                 <div class="p-4 d-flex flex-column flex-grow-1">
-                                    <div class="d-flex mb-3 text-muted" style="font-size: 13px;">
-                                        <small class="me-3"><i class="far fa-user text-primary me-2"></i>Vishal Parmar</small>
-                                        <small><i class="far fa-calendar-alt text-primary me-2"></i>December 2025</small>
+                                    <div class="d-flex align-items-center gap-3 mb-2 text-muted" style="font-size: 13px;">
+                                        <span><i class="far fa-user text-cyan me-1"></i>Vishal Parmar</span>
+                                        <span><i class="far fa-calendar-alt text-cyan me-1"></i>December 2025</span>
                                     </div>
-                                    <h4 class="mb-3 text-primary"><a href="detail.html" class="text-reset text-decoration-none">Kubernetes Multi-Tenancy at Enterprise Scale</a></h4>
-                                    <p class="text-muted flex-grow-1" style="font-size: 14px;">Resource quotas, network policy enforcement, and ingress controllers configured for secure multi-tenant cluster management.</p>
-                                    <a class="text-uppercase fw-bold text-primary text-decoration-none mt-2" href="detail.html">Read Analysis <i class="bi bi-arrow-right ms-1"></i></a>
+                                    <h3 class="fs-5 mb-3"><a href="detail.html" class="text-white text-decoration-none hover-cyan">Kubernetes Multi-Tenancy at Enterprise Scale</a></h3>
+                                    <p class="text-muted flex-grow-1 mb-3" style="font-size: 14px; line-height: 1.6;">
+                                        Resource quotas, network policy enforcement, and ingress controllers configured for secure multi-tenant cluster management.
+                                    </p>
+                                    <a class="text-cyan fw-bold text-decoration-none font-mono" href="detail.html" style="font-size: 13px;">
+                                        Read Analysis <i class="bi bi-arrow-right ms-1"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Post 5 -->
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.1s">
-                            <div class="blog-item bg-light rounded overflow-hidden shadow-sm border border-light h-100 d-flex flex-column">
-                                <div class="blog-img position-relative overflow-hidden" style="height: 220px;">
-                                    <img class="img-fluid w-100 h-100" src="img/service-software.jpg" alt="PostgreSQL Optimization" style="object-fit: cover;">
-                                    <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-4 py-2 px-3 fw-bold text-decoration-none" href="detail.html" style="font-size: 12px;">Database Systems</a>
+                        <div class="col-md-6">
+                            <div class="article-enterprise-card h-100">
+                                <div class="position-relative overflow-hidden" style="height: 200px;">
+                                    <img class="w-100 h-100" src="img/service-software.jpg" alt="PostgreSQL Optimization" style="object-fit: cover;">
+                                    <span class="badge position-absolute top-0 start-0 m-3" style="background-color: var(--primary-blue); color: #fff; font-size: 11.5px; font-weight: 600;">Database Systems</span>
                                 </div>
                                 <div class="p-4 d-flex flex-column flex-grow-1">
-                                    <div class="d-flex mb-3 text-muted" style="font-size: 13px;">
-                                        <small class="me-3"><i class="far fa-user text-primary me-2"></i>Rushabh Makim</small>
-                                        <small><i class="far fa-calendar-alt text-primary me-2"></i>November 2025</small>
+                                    <div class="d-flex align-items-center gap-3 mb-2 text-muted" style="font-size: 13px;">
+                                        <span><i class="far fa-user text-cyan me-1"></i>Rushabh Makim</span>
+                                        <span><i class="far fa-calendar-alt text-cyan me-1"></i>November 2025</span>
                                     </div>
-                                    <h4 class="mb-3 text-primary"><a href="detail.html" class="text-reset text-decoration-none">High-Concurrency PostgreSQL Optimization</a></h4>
-                                    <p class="text-muted flex-grow-1" style="font-size: 14px;">Connection pooling, custom partial indexing, table partition strategies, and read replica scaling for terabyte-scale workloads.</p>
-                                    <a class="text-uppercase fw-bold text-primary text-decoration-none mt-2" href="detail.html">Read Analysis <i class="bi bi-arrow-right ms-1"></i></a>
+                                    <h3 class="fs-5 mb-3"><a href="detail.html" class="text-white text-decoration-none hover-cyan">High-Concurrency PostgreSQL Optimization</a></h3>
+                                    <p class="text-muted flex-grow-1 mb-3" style="font-size: 14px; line-height: 1.6;">
+                                        Connection pooling, custom partial indexing, table partition strategies, and read replica scaling for terabyte-scale workloads.
+                                    </p>
+                                    <a class="text-cyan fw-bold text-decoration-none font-mono" href="detail.html" style="font-size: 13px;">
+                                        Read Analysis <i class="bi bi-arrow-right ms-1"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Post 6 -->
-                        <div class="col-md-6 wow slideInUp" data-wow-delay="0.3s">
-                            <div class="blog-item bg-light rounded overflow-hidden shadow-sm border border-light h-100 d-flex flex-column">
-                                <div class="blog-img position-relative overflow-hidden" style="height: 220px;">
-                                    <img class="img-fluid w-100 h-100" src="img/service-mobile.jpg" alt="Mobile Sync Engines" style="object-fit: cover;">
-                                    <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-4 py-2 px-3 fw-bold text-decoration-none" href="detail.html" style="font-size: 12px;">Mobile Engineering</a>
+                        <div class="col-md-6">
+                            <div class="article-enterprise-card h-100">
+                                <div class="position-relative overflow-hidden" style="height: 200px;">
+                                    <img class="w-100 h-100" src="img/service-mobile.jpg" alt="Mobile Sync Engines" style="object-fit: cover;">
+                                    <span class="badge position-absolute top-0 start-0 m-3" style="background-color: var(--primary-blue); color: #fff; font-size: 11.5px; font-weight: 600;">Mobile Engineering</span>
                                 </div>
                                 <div class="p-4 d-flex flex-column flex-grow-1">
-                                    <div class="d-flex mb-3 text-muted" style="font-size: 13px;">
-                                        <small class="me-3"><i class="far fa-user text-primary me-2"></i>Priya Mehta</small>
-                                        <small><i class="far fa-calendar-alt text-primary me-2"></i>October 2025</small>
+                                    <div class="d-flex align-items-center gap-3 mb-2 text-muted" style="font-size: 13px;">
+                                        <span><i class="far fa-user text-cyan me-1"></i>Priya Mehta</span>
+                                        <span><i class="far fa-calendar-alt text-cyan me-1"></i>October 2025</span>
                                     </div>
-                                    <h4 class="mb-3 text-primary"><a href="detail.html" class="text-reset text-decoration-none">Offline-First Sync Engines for Enterprise Apps</a></h4>
-                                    <p class="text-muted flex-grow-1" style="font-size: 14px;">Conflict-free replicated data types (CRDTs), background synchronization, and secure bi-directional websocket communication.</p>
-                                    <a class="text-uppercase fw-bold text-primary text-decoration-none mt-2" href="detail.html">Read Analysis <i class="bi bi-arrow-right ms-1"></i></a>
+                                    <h3 class="fs-5 mb-3"><a href="detail.html" class="text-white text-decoration-none hover-cyan">Offline-First Sync Engines for Enterprise Apps</a></h3>
+                                    <p class="text-muted flex-grow-1 mb-3" style="font-size: 14px; line-height: 1.6;">
+                                        Conflict-free replicated data types (CRDTs), background synchronization, and secure bi-directional websocket communication.
+                                    </p>
+                                    <a class="text-cyan fw-bold text-decoration-none font-mono" href="detail.html" style="font-size: 13px;">
+                                        Read Analysis <i class="bi bi-arrow-right ms-1"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Pagination -->
-                        <div class="col-12 wow slideInUp" data-wow-delay="0.1s">
-                            <nav aria-label="Page navigation">
-                              <ul class="pagination pagination-lg m-0 justify-content-center">
-                                <li class="page-item active"><a class="page-link rounded-circle me-2" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link rounded-circle me-2" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link rounded-circle" href="#">3</a></li>
-                              </ul>
-                            </nav>
-                        </div>
                     </div>
                 </div>
-                <!-- Blog list End -->
-    
+                <!-- Articles Grid End -->
+
                 <!-- Sidebar Start -->
                 <div class="col-lg-4">
-                    <!-- Search Form Start -->
-                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 bg-light border-0" placeholder="Search insights &amp; topics">
-                            <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    <!-- Practice Areas Categories -->
+                    <div class="p-4 rounded border mb-4" style="background-color: var(--surface-elevated); border-color: var(--border-color) !important;">
+                        <h3 class="text-white fs-5 fw-bold mb-3 pb-2 border-bottom" style="border-color: var(--border-color) !important;">Practice Disciplines</h3>
+                        <div class="d-flex flex-column gap-2">
+                            <a class="d-flex justify-content-between align-items-center p-2 rounded text-decoration-none text-muted hover-cyan" href="service.html" style="background-color: var(--bg-secondary);">
+                                <span><i class="bi bi-chevron-right text-cyan me-2"></i>Cloud Architecture</span>
+                                <span class="badge font-mono" style="background-color: var(--surface-elevated); color: var(--tech-cyan);">12</span>
+                            </a>
+                            <a class="d-flex justify-content-between align-items-center p-2 rounded text-decoration-none text-muted hover-cyan" href="service.html" style="background-color: var(--bg-secondary);">
+                                <span><i class="bi bi-chevron-right text-cyan me-2"></i>Enterprise AI &amp; LLMs</span>
+                                <span class="badge font-mono" style="background-color: var(--surface-elevated); color: var(--tech-cyan);">8</span>
+                            </a>
+                            <a class="d-flex justify-content-between align-items-center p-2 rounded text-decoration-none text-muted hover-cyan" href="service.html" style="background-color: var(--bg-secondary);">
+                                <span><i class="bi bi-chevron-right text-cyan me-2"></i>DevSecOps &amp; Zero Trust</span>
+                                <span class="badge font-mono" style="background-color: var(--surface-elevated); color: var(--tech-cyan);">15</span>
+                            </a>
+                            <a class="d-flex justify-content-between align-items-center p-2 rounded text-decoration-none text-muted hover-cyan" href="service.html" style="background-color: var(--bg-secondary);">
+                                <span><i class="bi bi-chevron-right text-cyan me-2"></i>Custom CRM &amp; ERP Platforms</span>
+                                <span class="badge font-mono" style="background-color: var(--surface-elevated); color: var(--tech-cyan);">10</span>
+                            </a>
+                            <a class="d-flex justify-content-between align-items-center p-2 rounded text-decoration-none text-muted hover-cyan" href="service.html" style="background-color: var(--bg-secondary);">
+                                <span><i class="bi bi-chevron-right text-cyan me-2"></i>Digital Forensics &amp; SOC</span>
+                                <span class="badge font-mono" style="background-color: var(--surface-elevated); color: var(--tech-cyan);">7</span>
+                            </a>
                         </div>
                     </div>
-                    <!-- Search Form End -->
-    
-                    <!-- Category Start -->
-                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="mb-0">Practice Areas</h3>
-                        </div>
-                        <div class="link-animated d-flex flex-column justify-content-start">
-                            <a class="h6 fw-bold bg-light rounded py-2 px-3 mb-2 text-decoration-none text-dark d-flex justify-content-between" href="#"><i class="bi bi-arrow-right text-primary me-2"></i><span>Cloud Architecture</span><span class="badge bg-primary text-white rounded-pill">12</span></a>
-                            <a class="h6 fw-bold bg-light rounded py-2 px-3 mb-2 text-decoration-none text-dark d-flex justify-content-between" href="#"><i class="bi bi-arrow-right text-primary me-2"></i><span>Enterprise AI &amp; LLMs</span><span class="badge bg-primary text-white rounded-pill">8</span></a>
-                            <a class="h6 fw-bold bg-light rounded py-2 px-3 mb-2 text-decoration-none text-dark d-flex justify-content-between" href="#"><i class="bi bi-arrow-right text-primary me-2"></i><span>DevSecOps &amp; Zero Trust</span><span class="badge bg-primary text-white rounded-pill">15</span></a>
-                            <a class="h6 fw-bold bg-light rounded py-2 px-3 mb-2 text-decoration-none text-dark d-flex justify-content-between" href="#"><i class="bi bi-arrow-right text-primary me-2"></i><span>Custom CRM &amp; ERP Systems</span><span class="badge bg-primary text-white rounded-pill">10</span></a>
-                            <a class="h6 fw-bold bg-light rounded py-2 px-3 mb-2 text-decoration-none text-dark d-flex justify-content-between" href="#"><i class="bi bi-arrow-right text-primary me-2"></i><span>Digital Forensics &amp; VAPT</span><span class="badge bg-primary text-white rounded-pill">7</span></a>
-                        </div>
-                    </div>
-                    <!-- Category End -->
-    
-                    <!-- Recent Post Start -->
-                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="mb-0">Featured Deep Dives</h3>
-                        </div>
-                        <div class="d-flex rounded overflow-hidden mb-3 bg-light shadow-sm">
-                            <img class="img-fluid" src="img/blog-cloud.jpg" style="width: 90px; height: 90px; object-fit: cover;" alt="Cloud Architecture">
-                            <a href="detail.html" class="p-3 text-dark text-decoration-none fw-bold" style="font-size: 13.5px; line-height: 1.4;">Architecting Resilient Multi-Cloud Microservices</a>
-                        </div>
-                        <div class="d-flex rounded overflow-hidden mb-3 bg-light shadow-sm">
-                            <img class="img-fluid" src="img/blog-ai.jpg" style="width: 90px; height: 90px; object-fit: cover;" alt="Enterprise AI">
-                            <a href="detail.html" class="p-3 text-dark text-decoration-none fw-bold" style="font-size: 13.5px; line-height: 1.4;">Operationalizing Generative AI &amp; Enterprise LLMs</a>
-                        </div>
-                        <div class="d-flex rounded overflow-hidden mb-3 bg-light shadow-sm">
-                            <img class="img-fluid" src="img/blog-security.jpg" style="width: 90px; height: 90px; object-fit: cover;" alt="DevSecOps">
-                            <a href="detail.html" class="p-3 text-dark text-decoration-none fw-bold" style="font-size: 13.5px; line-height: 1.4;">Zero Trust Architecture for Modern DevOps</a>
+
+                    <!-- Featured Deep Dives -->
+                    <div class="p-4 rounded border mb-4" style="background-color: var(--surface-elevated); border-color: var(--border-color) !important;">
+                        <h3 class="text-white fs-5 fw-bold mb-3 pb-2 border-bottom" style="border-color: var(--border-color) !important;">Featured Deep Dives</h3>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center gap-3 p-2 rounded" style="background-color: var(--bg-secondary);">
+                                <img src="img/blog-cloud.jpg" style="width: 68px; height: 68px; object-fit: cover;" class="rounded" alt="Cloud Architecture">
+                                <div>
+                                    <a href="detail.html" class="text-white text-decoration-none fw-semibold fs-6 hover-cyan d-block" style="line-height: 1.4;">Resilient Multi-Cloud Microservices</a>
+                                    <small class="text-muted font-mono" style="font-size: 12px;">Cloud Native</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 p-2 rounded" style="background-color: var(--bg-secondary);">
+                                <img src="img/blog-ai.jpg" style="width: 68px; height: 68px; object-fit: cover;" class="rounded" alt="Enterprise AI">
+                                <div>
+                                    <a href="detail.html" class="text-white text-decoration-none fw-semibold fs-6 hover-cyan d-block" style="line-height: 1.4;">Operationalizing Generative AI &amp; LLMs</a>
+                                    <small class="text-muted font-mono" style="font-size: 12px;">AI Systems</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-3 p-2 rounded" style="background-color: var(--bg-secondary);">
+                                <img src="img/blog-security.jpg" style="width: 68px; height: 68px; object-fit: cover;" class="rounded" alt="DevSecOps">
+                                <div>
+                                    <a href="detail.html" class="text-white text-decoration-none fw-semibold fs-6 hover-cyan d-block" style="line-height: 1.4;">Zero Trust Architecture for DevOps</a>
+                                    <small class="text-muted font-mono" style="font-size: 12px;">Cybersecurity</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Recent Post End -->
-    
-                    <!-- Tags Start -->
-                    <div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
-                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                            <h3 class="mb-0">Engineering Topics</h3>
-                        </div>
-                        <div class="d-flex flex-wrap gap-2">
-                            <a href="#" class="btn btn-sm btn-light border py-1 px-3 fw-bold">AWS</a>
-                            <a href="#" class="btn btn-sm btn-light border py-1 px-3 fw-bold">Docker</a>
-                            <a href="#" class="btn btn-sm btn-light border py-1 px-3 fw-bold">Kubernetes</a>
-                            <a href="#" class="btn btn-sm btn-light border py-1 px-3 fw-bold">Microservices</a>
-                            <a href="#" class="btn btn-sm btn-light border py-1 px-3 fw-bold">PostgreSQL</a>
-                            <a href="#" class="btn btn-sm btn-light border py-1 px-3 fw-bold">React / Next.js</a>
-                            <a href="#" class="btn btn-sm btn-light border py-1 px-3 fw-bold">Zero Trust</a>
-                            <a href="#" class="btn btn-sm btn-light border py-1 px-3 fw-bold">VAPT</a>
-                        </div>
-                    </div>
-                    <!-- Tags End -->
-    
-                    <!-- Architecture Consultation Advisory Card -->
-                    <div class="wow slideInUp" data-wow-delay="0.1s">
-                        <div class="rounded p-4 text-white shadow-lg text-center position-relative overflow-hidden" style="background: linear-gradient(135deg, #070b14, #0c1a30, #0369a1); border: 1px solid rgba(14, 165, 233, 0.3);">
-                            <i class="fa fa-layer-group text-primary fa-3x mb-3"></i>
-                            <h4 class="text-white fw-bold mb-2">Need An Architecture Review?</h4>
-                            <p class="text-light-50 small mb-4" style="color: #cbd5e1; font-size: 13px; line-height: 1.6;">Our principal architects evaluate your infrastructure, uncover bottlenecks, and design scalable cloud-native blueprints.</p>
-                            <a href="quote.html" class="btn btn-primary py-2 px-4 rounded-pill fw-bold shadow"><i class="fa fa-rocket me-2"></i>Consult An Architect</a>
-                        </div>
+
+                    <!-- Architecture Advisory CTA -->
+                    <div class="p-4 rounded border text-center" style="background-color: var(--surface-elevated); border-color: var(--border-color) !important;">
+                        <i class="fa fa-layer-group text-cyan fs-2 mb-3"></i>
+                        <h3 class="text-white fs-5 fw-bold mb-2">Need An Architecture Review?</h3>
+                        <p class="text-muted mb-4" style="font-size: 14px; line-height: 1.6;">Our principal architects evaluate your infrastructure, uncover performance bottlenecks, and design scalable cloud-native blueprints.</p>
+                        <a href="quote.html" class="btn btn-primary w-100 py-2"><i class="fa fa-terminal me-2"></i>Consult An Architect</a>
                     </div>
                 </div>
                 <!-- Sidebar End -->
             </div>
         </div>
-    </div>
-    <!-- Blog End -->
+    </section>
+    <!-- Insights Content End -->
 
-
-    <!-- Vendor / Tech Ecosystem Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background: rgba(14, 165, 233, 0.03); border-top: 1px solid rgba(14, 165, 233, 0.1); border-bottom: 1px solid rgba(14, 165, 233, 0.1);">
+    <!-- Tech Ecosystem Ribbon Start -->
+    <div class="container-fluid py-5" style="background: var(--bg-main); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
         <div class="container py-3">
             <div class="text-center mb-4">
-                <p class="text-uppercase fw-bold text-primary m-0" style="letter-spacing: 2px; font-size: 13px;">Enterprise Technology Ecosystem &amp; Cloud Platforms</p>
+                <span class="font-mono text-cyan" style="font-size: 13px; letter-spacing: 2px;">ENTERPRISE TECHNOLOGY ECOSYSTEM</span>
             </div>
             <div class="owl-carousel vendor-carousel">
                 <div class="tech-partner-card">
-                    <i class="fab fa-aws text-warning"></i>
-                    <span>AWS</span>
+                    <i class="fab fa-aws"></i>
+                    <span>Amazon Web Services</span>
                 </div>
                 <div class="tech-partner-card">
-                    <i class="fab fa-microsoft text-primary"></i>
-                    <span>Azure</span>
+                    <i class="fab fa-microsoft"></i>
+                    <span>Microsoft Azure</span>
                 </div>
                 <div class="tech-partner-card">
-                    <i class="fab fa-google text-danger"></i>
-                    <span>Google Cloud</span>
+                    <i class="fab fa-google"></i>
+                    <span>Google Cloud Platform</span>
                 </div>
                 <div class="tech-partner-card">
-                    <i class="fab fa-docker text-info"></i>
-                    <span>Docker</span>
+                    <i class="fab fa-docker"></i>
+                    <span>Docker Enterprise</span>
                 </div>
                 <div class="tech-partner-card">
-                    <i class="fas fa-dharmachakra text-primary"></i>
-                    <span>Kubernetes</span>
+                    <i class="fas fa-dharmachakra"></i>
+                    <span>Kubernetes Cloud</span>
                 </div>
                 <div class="tech-partner-card">
-                    <i class="fab fa-react text-info"></i>
-                    <span>React / Next.js</span>
+                    <i class="fab fa-react"></i>
+                    <span>React &amp; Next.js</span>
                 </div>
                 <div class="tech-partner-card">
-                    <i class="fab fa-python text-warning"></i>
-                    <span>Python / AI</span>
+                    <i class="fab fa-python"></i>
+                    <span>Python &amp; FastAPI</span>
                 </div>
                 <div class="tech-partner-card">
-                    <i class="fab fa-node-js text-success"></i>
-                    <span>Node.js</span>
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js Microservices</span>
                 </div>
                 <div class="tech-partner-card">
-                    <i class="fas fa-database text-primary"></i>
-                    <span>PostgreSQL</span>
+                    <i class="fas fa-database"></i>
+                    <span>PostgreSQL &amp; Redis</span>
                 </div>
                 <div class="tech-partner-card">
-                    <i class="fas fa-shield-alt text-success"></i>
-                    <span>DevSecOps</span>
+                    <i class="fas fa-shield-alt"></i>
+                    <span>DevSecOps Hardening</span>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Vendor / Tech Ecosystem End -->
-    
+    <!-- Tech Ecosystem Ribbon End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Enterprise Footer Start -->
+    <footer class="footer-enterprise">
         <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="footer-about-box text-center p-4">
-                        <a href="index.html" class="d-inline-flex align-items-center gap-3 mb-3 text-decoration-none">
-                            <img src="img/logo.png" alt="Golden Sparrow SofTech Logo" style="height: 56px; width: auto; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));">
-                            <div class="text-start">
-                                <h4 class="m-0 text-white fw-bold">Golden Sparrow <span class="text-gradient-cyan">SofTech</span></h4>
-                                <small class="text-muted text-uppercase" style="font-size: 12px; letter-spacing: 1px; font-weight: 600;">Information Technology</small>
-                            </div>
-                        </a>
-                        <p class="text-light-50 mt-2 mb-4" style="color: #94a3b8; font-size: 14px; line-height: 1.6;">Enterprise software engineering consultancy delivering cloud architecture, resilient distributed systems, and production web platforms.</p>
-                        <div class="d-flex justify-content-center gap-2 pt-2">
-                            <a class="social-pill-btn" href="https://twitter.com/golden_sparrow9" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a class="social-pill-btn" href="https://www.facebook.com/profile.php?id=100092878565032" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a class="social-pill-btn" href="https://www.instagram.com/goldensparrowsoftech/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a class="social-pill-btn" href="https://api.whatsapp.com/send?phone=917990590007&text=Hello, I'm intrested in your service, provide me your quote." target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="index.html" class="d-inline-flex align-items-center gap-3 mb-3 text-decoration-none">
+                        <img src="img/logo.png" alt="Golden Sparrow SofTech Logo" style="height: 52px; width: auto;">
+                        <div>
+                            <span class="d-block text-white fw-bold fs-5" style="letter-spacing: -0.5px;">Golden Sparrow <span class="text-cyan">SofTech</span></span>
+                            <small class="text-muted font-mono" style="font-size: 11px;">ENTERPRISE IT &amp; ENGINEERING</small>
                         </div>
+                    </a>
+                    <p class="text-muted mt-2 mb-4" style="font-size: 14px; line-height: 1.7;">
+                        Enterprise digital engineering consultancy delivering resilient distributed systems, high-availability cloud architecture, and zero-trust cybersecurity operations.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a class="topbar-social-btn" href="https://twitter.com/golden_sparrow9" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="topbar-social-btn" href="https://www.facebook.com/profile.php?id=100092878565032" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="topbar-social-btn" href="https://www.instagram.com/goldensparrowsoftech/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="topbar-social-btn" href="https://api.whatsapp.com/send?phone=917990590007&text=Hello,%20I%27m%20interested%20in%20your%20services." target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-6">
-                    <div class="row gx-5">
-                        <div class="col-lg-7 col-md-12 pt-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Get In Touch</h3>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt text-primary me-2 flex-shrink-0 mt-1"></i>
-                                <p class="mb-0">"om", sorathiya park, street no. 2,Nr. swaminarayan temple Mavdi, Rajkot</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open text-primary me-2 flex-shrink-0 mt-1"></i>
-                                <p class="mb-0 text-break" style="word-break: break-all;"><a href="mailto:goldensparrowsoftech@gmail.com" class="linkcolor">goldensparrowsoftech@gmail.com</a></p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-telephone text-primary me-2 flex-shrink-0 mt-1"></i>
-                                <p class="mb-0"><a href="tel:+917990590007" class="linkcolor">+91 79905 90007</a></p>
-                            </div>
-                            <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="https://twitter.com/golden_sparrow9" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://www.facebook.com/profile.php?id=100092878565032" target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://www.instagram.com/goldensparrowsoftech/" target="_blank"><i class="fab fa-instagram fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="https://api.whatsapp.com/send?phone=917990590007&text=Hello, I'm intrested in your service, provide me your quote." target="_blank"><i class="fab fa-whatsapp fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
-                            </div>
-                            <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Engineering Insights</a>
-                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid text-white" style="background: #061429;">
-        <div class="container text-center">
-            <div class="row justify-content-end">
-                <div class="col-lg-8 col-md-6">
-                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">goldensparrowsoftech.com</a>. All Rights Reserved. 
-						</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
 
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-nav-title">Practices</div>
+                    <ul class="footer-nav-links">
+                        <li><a href="service.html">Custom Software</a></li>
+                        <li><a href="service.html">Cloud Architecture</a></li>
+                        <li><a href="service.html">Cybersecurity &amp; SOC</a></li>
+                        <li><a href="service.html">Digital Forensics</a></li>
+                        <li><a href="service.html">DevOps Automation</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-nav-title">Company</div>
+                    <ul class="footer-nav-links">
+                        <li><a href="about.html">About Overview</a></li>
+                        <li><a href="feature.html">Engineering SLA</a></li>
+                        <li><a href="price.html">Engagement Models</a></li>
+                        <li><a href="team.html">Leadership Squad</a></li>
+                        <li><a href="testimonial.html">Verified Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-nav-title">Global Headquarters</div>
+                    <div class="d-flex flex-column gap-3" style="font-size: 14px;">
+                        <div class="d-flex align-items-start gap-2">
+                            <i class="fa fa-map-marker-alt text-cyan mt-1"></i>
+                            <span>"om", sorathiya park, street no. 2, Nr. swaminarayan temple Mavdi, Rajkot, Gujarat 360004</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa fa-phone-alt text-cyan"></i>
+                            <a href="tel:+917990590007" class="text-white">+91 79905 90007</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa fa-envelope text-cyan"></i>
+                            <a href="mailto:goldensparrowsoftech@gmail.com" class="text-white">goldensparrowsoftech@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+                <p class="mb-0">&copy; <span id="currentYear">2026</span> <strong class="text-white">Golden Sparrow SofTech</strong>. All Rights Reserved.</p>
+                <div class="d-flex gap-3">
+                    <a href="about.html" class="text-muted">Privacy Policy</a>
+                    <span class="text-muted">•</span>
+                    <a href="about.html" class="text-muted">Terms of Service</a>
+                    <span class="text-muted">•</span>
+                    <a href="contact.html" class="text-muted">Security Disclosures</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Enterprise Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -501,20 +490,30 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <!-- Google Translate Element & Init -->
-    <div id="google_translate_element"></div>
+    <!-- Google Translate Element -->
+    <div id="google_translate_element" style="display:none"></div>
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'en,hi,gu',
-                autoDisplay: false
-            }, 'google_translate_element');
+            new google.translate.TranslateElement({ pageLanguage: 'en', autoDisplay: false }, 'google_translate_element');
+        }
+        function setLanguage(langCode) {
+            var select = document.querySelector(".goog-te-combo");
+            if (select) {
+                select.value = langCode;
+                select.dispatchEvent(new Event('change'));
+                var langMap = { 'en': 'English', 'hi': 'हिन्दी', 'gu': 'ગુજરાતી' };
+                var btn = document.getElementById('selectedLangText');
+                if (btn && langMap[langCode]) btn.textContent = langMap[langCode];
+            }
         }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

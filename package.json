@@ -1,0 +1,25 @@
+{
+  "name": "goldensparrow-softech",
+  "version": "1.0.0",
+  "description": "Golden Sparrow SofTech official website",
+  "scripts": {
+    "start": "live-server --port=5501",
+    "dev": "live-server --port=5501",
+    "serve": "live-server --port=5501 --no-browser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoldenSparrowSofTech/GoldenSparrow-Softech.git"
+  },
+  "keywords": [
+    "golden-sparrow",
+    "website",
+    "bootstrap",
+    "software"
+  ],
+  "author": "Golden Sparrow SofTech",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

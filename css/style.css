@@ -1244,3 +1244,60 @@ body {
     color: #ffffff;
     box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
 }
+
+
+/*** Modern Full-Width Container & Panoramic Viewports ***/
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1440px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1240px;
+    }
+}
+
+/*** Hero Carousel Image Sizing ***/
+#header-carousel .carousel-item img {
+    min-height: 680px;
+    height: 86vh;
+    max-height: 860px;
+    object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+    #header-carousel .carousel-item img {
+        min-height: 520px;
+        height: 70vh;
+    }
+}
+
+/*** Tech Ecosystem Partner Cards ***/
+.tech-partner-card {
+    background: #ffffff;
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    height: 70px;
+}
+.tech-partner-card:hover {
+    transform: translateY(-3px);
+    border-color: #0ea5e9;
+    box-shadow: 0 8px 24px rgba(14, 165, 233, 0.15);
+}
+.tech-partner-card i {
+    font-size: 26px;
+}
+.tech-partner-card span {
+    font-weight: 700;
+    font-size: 14px;
+    color: #1e293b;
+    letter-spacing: -0.01em;
+}
